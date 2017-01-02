@@ -30,10 +30,6 @@ var HEROES = [
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
-        this.hero = {
-            id: 1,
-            name: 'Windstorm'
-        };
         this.heroes = HEROES;
     }
     AppComponent = __decorate([
