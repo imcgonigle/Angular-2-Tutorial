@@ -34,6 +34,7 @@ var AppComponent = (function () {
             id: 1,
             name: 'Windstorm'
         };
+        this.heroes = HEROES;
     }
     AppComponent = __decorate([
         core_1.Component({
