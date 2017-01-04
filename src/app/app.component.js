@@ -18,6 +18,9 @@ var AppComponent = (function () {
     AppComponent.prototype.onSelect = function (hero) {
         this.selectedHero = hero;
     };
+    AppComponent.prototype.getHeroes = function () {
+        this.heroes = this.heroService.getHeroes();
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app',
