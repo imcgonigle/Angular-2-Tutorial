@@ -21,6 +21,9 @@ var AppComponent = (function () {
     AppComponent.prototype.getHeroes = function () {
         this.heroes = this.heroService.getHeroes();
     };
+    AppComponent.prototype.ngOnInit = function () {
+        this.getHeroes();
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app',

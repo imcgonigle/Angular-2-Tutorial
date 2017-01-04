@@ -80,6 +80,10 @@ export class AppComponent  {
   getHeroes(): void {
     this.heroes = this.heroService.getHeroes();
   }
+
+  ngOnInit(): void {
+    this.getHeroes()
+  }
   
   constructor(private heroService: HeroService) {}
 }
