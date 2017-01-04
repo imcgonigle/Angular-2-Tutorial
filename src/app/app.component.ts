@@ -78,7 +78,7 @@ export class AppComponent  {
   }
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes)
   }
 
   ngOnInit(): void {
