@@ -33,6 +33,11 @@ var AppModule = (function () {
                     {
                         path: 'dashboard',
                         component: dashboard_component_1.DashboardComponent
+                    },
+                    {
+                        path: '',
+                        redirectTo: '/dashboard',
+                        pathMatch: 'full'
                     }
                 ])
             ],
