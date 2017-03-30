@@ -26,6 +26,9 @@ var HeroDetailComponent = (function () {
             .switchMap(function (params) { return _this.heroService.getHero(+params['id']); })
             .subscribe(function (hero) { return _this.hero = hero; });
     };
+    HeroDetailComponent.prototype.goBack = function () {
+        this.location.back();
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', hero_1.Hero)
